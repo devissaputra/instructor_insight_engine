@@ -54,7 +54,7 @@ Synthetic course-event data are included.
 
 ```bash
 git clone https://github.com/devissaputra/instructor_insight_engine.git
-cd instructor-insight-engine
+cd instructor_insight_engine
 python scripts/run_demo.py
 python -m unittest discover -s tests -v
 ```
