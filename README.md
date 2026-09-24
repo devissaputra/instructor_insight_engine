@@ -1,12 +1,12 @@
 # Instructor Insight Engine
 
-> Teacher facing aggregation baseline that turns course events into learner summaries, review flags, and class level signals.
+> Teacher-facing aggregation baseline that turns course events into learner summaries, review flags, and class-level signals.
 
-[![CI](https://github.com/devissaputra/instructor-insight-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/instructor-insight-engine/actions/workflows/ci.yml)
+[![CI](https://github.com/devissaputra/instructor_insight_engine/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/instructor_insight_engine/actions/workflows/ci.yml)
 
 ![Instructor Insight Engine workflow](assets/architecture.svg)
 
-**Area:** Learning Analytics & Multimodal Evidence    
+**Area:** AI in Education (AIEd) · Learning Analytics & Instructor Decision Support    
 **Status:** working research prototype  
 **Author:** Devis Wawan Saputra
 
@@ -20,7 +20,7 @@ This project turns raw course events into compact instructor-facing summaries. I
 
 1. Which aggregated indicators are actionable for instructors without encouraging surveillance?
 2. How should cohort and learner views distinguish signal from noise?
-3. Can trend detection surface intervention opportunities early?
+3. How should transparent review flags balance useful coverage with false alarms?
 
 ## How it works
 
@@ -38,8 +38,8 @@ This snapshot shows the bundled synthetic example for Instructor Insight Engine.
 
 - event aggregation
 - attempt and accuracy summaries
-- minimum evidence flag rule
-- class level aggregation
+- minimum-evidence flag rule
+- class-level aggregation
 - human review output
 
 ## Data
@@ -51,7 +51,7 @@ Synthetic course-event data are included.
 ## Run the demo
 
 ```bash
-git clone https://github.com/devissaputra/instructor-insight-engine.git
+git clone https://github.com/devissaputra/instructor_insight_engine.git
 cd instructor-insight-engine
 python scripts/run_demo.py
 python -m unittest discover -s tests -v
@@ -105,7 +105,7 @@ The current flag rule is intentionally simple and should not be interpreted as a
 A credible next version would:
 
 1. connect a deidentified course event table with clear event semantics
-2. compare rule based flags with instructor review
+2. compare rule-based flags with instructor review
 3. measure whether the interface changes the timeliness or quality of support
 
 ## Related work
