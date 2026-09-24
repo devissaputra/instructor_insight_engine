@@ -8,19 +8,19 @@ Instructor Insight Engine
 
 1. Which aggregated indicators are actionable for instructors without encouraging surveillance?
 2. How should cohort and learner views distinguish signal from noise?
-3. Can trend detection surface intervention opportunities early?
+3. How should transparent review flags balance useful coverage with false alarms?
 
 ## Baseline methods
 
 - event aggregation
 - attempt and accuracy summaries
-- minimum evidence flag rule
-- class level aggregation
+- minimum-evidence flag rule
+- class-level aggregation
 - human review output
 
 ## Evidence to collect
 
-Start from the current transparent baseline and record every transformation needed to produce learner summaries, a transparent review flag, and class level aggregate signals. Keep a clear boundary between synthetic demonstration data and any future empirical dataset.
+Start from the current transparent baseline and record every transformation needed to produce learner summaries, a transparent review flag, and class-level aggregate signals. Keep a clear boundary between synthetic demonstration data and any future empirical dataset.
 
 ## Validation
 
