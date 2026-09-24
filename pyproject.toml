@@ -5,10 +5,15 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "instructor-insight-engine"
 version = "0.1.0"
-description = "Teacher facing aggregation baseline that turns course events into learner summaries, review flags, and class level signals."
+description = "Teacher-facing aggregation baseline that turns course events into learner summaries, review flags, and class-level signals."
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "Devis Wawan Saputra"}]
+readme = "README.md"
+keywords = ["ai-in-education", "aied", "learning-analytics", "instructor-dashboard", "teacher-decision-support", "educational-data"]
+
+[project.urls]
+Repository = "https://github.com/devissaputra/instructor_insight_engine"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
