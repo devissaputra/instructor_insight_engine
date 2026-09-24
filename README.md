@@ -16,7 +16,9 @@ This project turns raw course events into compact instructor-facing summaries. I
 
 **Who may find it useful:** Instructors, learning-analytics researchers, and teams building teacher-facing dashboards.
 
-## Research questions
+## Questions for empirical validation
+
+The current aggregation and flagging baseline does not establish instructor usefulness or optimal alert thresholds; those require human evaluation.
 
 1. Which aggregated indicators are actionable for instructors without encouraging surveillance?
 2. How should cohort and learner views distinguish signal from noise?
