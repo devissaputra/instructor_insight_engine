@@ -1,0 +1,8 @@
+{
+  "kind": "illustrative_calculation",
+  "note": "Synthetic count example; cutoff is heuristic.",
+  "outputs": {
+    "accuracy A (1 correct / 3)": 0.3333333333333333,
+    "flag A": true
+  }
+}

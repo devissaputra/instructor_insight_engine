@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# Learner accuracy = total correct / total attempts; flag if accuracy < .5 and attempts ≥ 3.
+# Class mean accuracy is an unweighted average across learners. No-attempt records currently use a zero sentinel, so sparse evidence must be inspected rather than interpreted as demonstrated failure.
+
 from collections import defaultdict
 
 

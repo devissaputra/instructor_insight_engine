@@ -1,0 +1,30 @@
+{
+  "question": "Which learner summaries deserve a closer look?",
+  "data": "Synthetic events containing learner IDs, minutes, attempts and correct counts.",
+  "method": "Aggregate within learners; calculate accuracy; flag low accuracy only when at least three attempts exist.",
+  "formula": "Learner accuracy = total correct / total attempts; flag if accuracy < .5 and attempts ≥ 3.",
+  "interpretation": "Class mean accuracy is an unweighted average across learners. No-attempt records currently use a zero sentinel, so sparse evidence must be inspected rather than interpreted as demonstrated failure.",
+  "status": "SYNTHETIC / RULE-BASED PROTOTYPE | no educational validity claim",
+  "source": "results/review_examples.json",
+  "rows": [
+    {
+      "label": "accuracy A (1 correct / 3)",
+      "path": [
+        "outputs",
+        "accuracy A (1 correct / 3)"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "flag A",
+      "path": [
+        "outputs",
+        "flag A"
+      ],
+      "unit": "unitless"
+    }
+  ],
+  "table_title": "Worked example — illustrative, not a measured research result",
+  "evidence_note": "Illustrative inputs and calculations are in scripts/review_examples.py.",
+  "finding": "This prototype converts synthetic activity events into learner-level summaries and simple instructor review flags. Accuracy is calculated from aggregated correct and attempted responses, and a low-accuracy flag requires at least three attempts. It also exposes class-level summaries, with clear limits: the thresholds are unvalidated, time spent is not learning, and sparse records need human interpretation."
+}

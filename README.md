@@ -1,14 +1,29 @@
 # Instructor Insight Engine
 
+This prototype converts synthetic activity events into learner-level summaries and simple instructor review flags. Accuracy is calculated from aggregated correct and attempted responses, and a low-accuracy flag requires at least three attempts. It also exposes class-level summaries, with clear limits: the thresholds are unvalidated, time spent is not learning, and sparse records need human interpretation.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** 6 existing unittest checks passed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
+
 > Teacher-facing aggregation baseline that turns course events into learner summaries, review flags, and class-level signals.
 
 [![CI](https://github.com/devissaputra/instructor_insight_engine/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/instructor_insight_engine/actions/workflows/ci.yml)
 
-![Instructor Insight Engine workflow](assets/architecture.svg)
 
 **Area:** AI in Education (AIEd) · Learning Analytics & Instructor Decision Support    
 **Status:** working research prototype  
-**Author:** Devis Wawan Saputra
+**Author:** Devis Saputra
 
 ## What this project is for
 
@@ -28,11 +43,9 @@ The current aggregation and flagging baseline does not establish instructor usef
 
 The engine aggregates event records by learner, totals time and attempts, calculates accuracy, and applies one explicit review flag: accuracy below 0.5 after at least three attempts. A class summary then reports learner count, flagged count, and mean accuracy.
 
-![Instructor Insight Engine data and reasoning flow](assets/data_flow.svg)
 
 Course events are reduced to learner level evidence before any flag is created. The final class signals summarize the cohort without hiding the learner records that produced them.
 
-![Synthetic demo snapshot for Instructor Insight Engine](assets/demo_snapshot.svg)
 
 This snapshot shows the bundled synthetic example for Instructor Insight Engine. It checks the software path; it is not an empirical performance result.
 
@@ -67,7 +80,6 @@ The next version should test whether these summaries help instructors notice act
 
 ## Evaluation view
 
-![Instructor Insight Engine evaluation dashboard](assets/evaluation_dashboard.svg)
 
 The Instructor Insight Engine dashboard is an evaluation checklist rather than a result chart. The bars are illustrative only; the labels show the evidence a real study would need to collect.
 
